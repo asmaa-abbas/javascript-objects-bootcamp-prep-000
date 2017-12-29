@@ -4,12 +4,12 @@ let playlist = {
   backstreetboys: 'I want it that way.'
 };
 
-const updatePlaylist = (playlist, artistName, songTitle) => {
+function updatePlaylist (playlist, artistName, songTitle) {
   playlist[artistName] = songTitle;
   return playlist;
-};
+}
 
-const removeFromPlaylist = (playlist, artistName) => {
+function removeFromPlaylist (playlist, artistName) {
   delete playlist[artistName];
   return playlist;
-};
+}
